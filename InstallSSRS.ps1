@@ -3,7 +3,7 @@ param (
 )
 if ($version -eq "14") {	
 	$DownloadUrl = "https://download.microsoft.com/download/E/6/4/E6477A2A-9B58-40F7-8AD6-62BB8491EA78/SQLServerReportingServices.exe"
-} else if ($version -eq "15") {
+} elseif ($version -eq "15") {
 	$DownloadUrl = "https://download.microsoft.com/download/1/a/a/1aaa9177-3578-4931-b8f3-373b24f63342/SQLServerReportingServices.exe"
 } else {
 	throw "Invalid Version. Script only supports '14' and '15'"
